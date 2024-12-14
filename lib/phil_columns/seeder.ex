@@ -287,7 +287,7 @@ defmodule PhilColumns.Seeder do
   end
 
   defp has_env_and_any_tags?(mod, env, tags) do
-    Enum.member?(mod.envs, env) &&
+    Enum.member?(mod.envs(), env) &&
       any_intersection?(mod, tags)
   end
 
