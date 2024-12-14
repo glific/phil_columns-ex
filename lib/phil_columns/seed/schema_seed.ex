@@ -15,7 +15,7 @@ defmodule PhilColumns.Seed.SchemaSeed do
   @opts [timeout: :infinity, log: false, schema_migration: true]
 
   def ensure_schema_seeds_table!(repo) do
-    adapter = repo.__adapter__
+    adapter = repo.__adapter__()
     create_seeds_table(adapter, repo)
   end
 
