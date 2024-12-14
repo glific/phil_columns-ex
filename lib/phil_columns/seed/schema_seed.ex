@@ -38,7 +38,7 @@ defmodule PhilColumns.Seed.SchemaSeed do
   end
 
   def get_source(repo) do
-    Keyword.get(repo.config, :seed_source, "schema_seeds")
+    Keyword.get(repo.config(), :seed_source, "schema_seeds")
   end
 
   defp create_seeds_table(adapter, repo) do
