@@ -81,7 +81,7 @@ defmodule PhilColumns.Seeder do
 
   defp run_maybe_in_transaction(repo, module, fun) do
     cond do
-      module.__seed__[:disable_ddl_transaction] ->
+      module.__seed__()[:disable_ddl_transaction] ->
         fun.()
 
       repo.__adapter__.supports_ddl_transaction? ->
