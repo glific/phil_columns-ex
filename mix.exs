@@ -4,7 +4,7 @@ defmodule PhilColumns.Mixfile do
   def project do
     [
       app: :glific_phil_columns,
-      version: "3.1.0",
+      version: "3.2.1",
       # build_path: "../../_build",
       # config_path: "../../config/config.exs",
       # deps_path: "../../deps",
@@ -20,7 +20,7 @@ defmodule PhilColumns.Mixfile do
 
   defp description do
     """
-    A fork from a a full featured Elixir/Ecto seeding and factory solution (phil_columns) providing means for dev and prod seeding as well as factories for test.
+    A fork from a full featured Elixir/Ecto seeding and factory solution (phil_columns) providing means for dev and prod seeding as well as factories for test.
     """
   end
 
