@@ -1,4 +1,4 @@
-defmodule PhilColumns.Mixfile do
+defmodule PhilColumns.MixProject do
   use Mix.Project
 
   def project do
@@ -48,9 +48,7 @@ defmodule PhilColumns.Mixfile do
   def application do
     [
       mod: {PhilColumns, []},
-      applications: [
-        :logger
-      ]
+      extra_applications: [:logger]
     ]
   end
 
